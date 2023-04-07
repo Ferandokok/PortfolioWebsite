@@ -1,206 +1,169 @@
-* {
-    padding: 0;
+*{
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    
 }
 body {
-    background-color: rgb(0, 0, 0);
-}
-.Logo{
-    position: sticky;
-    width: 150px;
-    height: 50px;
-}
-.navbar{
-    position: fixed;
-    background-color: rgb(68, 68, 68);
-    height: 50px;
-    width: 100%;
-    z-index: 500 !important;
-    box-shadow: 5px 1px 5px 5px rgb(0, 78, 137, 0.4);
-}
-.navtext{
-    text-decoration: none;
-    color: inherit;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-}
-.navButtonGRP .NavButton{
-    background-color: rgb(68, 68, 68);
-    border: none;
-    margin-top: -15px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+}
+
+
+/* .navbar {
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #3d000000;
+}
+
+.navButtonGRP {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.navtext {
+    display: flex;
+    align-items: center;
+} */
+
+.NavButton {
+    position: sticky;
+    background-color: transparent;
+    border: none;
+    color: rgb(157, 157, 157);
+    font-size: 16px;
+    margin-right: 20px;
     cursor: pointer;
+    font-weight: bold;
+    width: 65px;
+}
+.NavButtons{
+    flex-wrap: nowrap;
 }
 .NavButton:hover{
-    background-color: #4b4b4b;
+    text-decoration: underline;
 }
-.first{
-    display: block;
-    color: rgba(128, 128, 128, 0.60);
-    text-align: left;
-    font-size: 50px;
-    height: 750px;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding-left: 400px;
-    padding-top: 200px;
-    padding-bottom: 300px;
-    box-shadow: 4px 4px rgb(0, 78, 137);
+/* First section */
+.first {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    height: calc(125vh - 60px);
+    background: linear-gradient(to bottom, #000000, #434343);
+    /* background-image: ; */
+    background-size: cover;
+    background-position: top;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
-.second{
-    display: block;
-    background-color: rgba(57, 57, 57, 0.2);
-    height: 946px;
-    box-shadow: 4px 4px rgba(112, 112, 112, 0.215);
-    box-shadow: 4px 4px rgb(0, 78, 137);
-    z-index: 2 !important;
+/* .first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.third{
-    display: block;
-    padding: 10px;
-    background-color: rgb(100, 100, 100);
-    width: 100%;
-    height: 700px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
-    float: left;
-    box-shadow: 4px 4px rgb(0, 78, 137);
-    z-index: 1 !important;
-    margin-top: 4px;
-}
-.fourth{
-    display: block;
-    background-color: rgb(29, 29, 29);
-    height: 500px;
-    width: 100%;
-    float: left;
-    box-shadow: 4px 4px rgba(112, 112, 112, 0.215);
-    box-shadow: 4px 4px rgb(0, 78, 137);
-    z-index: 1 !important;
-}
-.fifth{
-
-}
-.TitleBox{ 
-    float: left;
-    /* background-color: aquamarine; */
-    width: 50%;
-}
-.title1{
-    /* float: left; */
-    margin-bottom: -25px;
-    font-family: 'Oswald', sans-serif;
-}
-.title2{
-    float: left;
-    color: rgb(163, 163, 163, 0.80);
-    text-shadow: 2px 2px rgb(255, 255, 255, 0.75);
-    font-size: 100px;
-    word-spacing: 0px;
-}
-.title3{
-    float: left;
-    font-size: 25px;
-    color: rgba(188, 188, 188, 0.85);
-    font-family: 'Oswald', sans-serif;
-    margin-top: -20px;
-    margin-left: 0px;
-}
-.Box{
-    position: relative;
-    padding: 25px;
-    background-color: rgb(100, 100, 100);
-    width: 300px;
-    height: 400px;
-    box-shadow: 7px 7px rgb(137, 137, 137);
-    float: left;
-    margin: 100px;
-    margin-top: 300px;
-}
-.Box2{
-    position: relative;
-    padding: 25px;
-    background-color: rgb(63, 63, 63);
-    box-shadow: 4px 4px rgb(25, 25, 25);
-    width: 300px;
-    height: 400px;
-    float: right;
-    margin: 100px;
-    margin-top: -300px;
-}
-.BoxButton{
-    background-color: rgb(55, 55, 55);
-    border-color: black;
-    color: white;
-    width: 110px;
-    padding: 15px;
-    margin-left: 130px;
-    margin-top: 70px;
+.TitleBox {
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border: 2px solid black;
-    cursor: pointer;
-}
-.BoxButton span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-  
-.BoxButton span:after {
-    content: '\2193';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-  
-.BoxButton:hover span {
-    padding-right: 25px;
-}
-  
-.BoxButton:hover span:after {
-    opacity: 1;
-    right: 0;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
-.SkillsBox{
-    width: max-content;
-    padding: 25px;
-    background-color: rgb(63, 63, 63);
-    margin: 50px;
-    box-shadow: 4px 4px rgb(25, 25, 25);
+.title1 {
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 10px;
 }
-.Aboutme{
-    padding: 25px;
-    color: rgb(25, 25, 25);
+
+.title2 {
+    font-size: 48px;
     font-family: 'Oswald', sans-serif;
-    text-decoration: underline;
-    text-align: left;
+    margin-bottom: 10px;
 }
-.AboutTitle{
-    padding: 25px;
-    text-decoration: underline;
+
+.title3 {
+    font-size: 18px;
+    font-family: 'Alegreya', serif;
+    margin-bottom: 20px;
 }
-.AboutTxt{
+
+/* Second section */
+.second {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0E8388;
+    padding: 50px;
+}
+
+.Box {
+    flex-basis: 300px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.BoxTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.BoxText {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.BoxButton {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Third section */
+.third {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+}
+
+.SkillsBox {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.Aboutme {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.AboutTxt {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
     color: whitesmoke;
-    padding-left: 50px;
-    max-width: 900px;
 }
-.BoxText{
-    color:whitesmoke;
-}
-.titleTXT{
-    color: rgb(190, 190, 190, 0.80);
-    font-family: 'Oswald', sans-serif;
-    padding-left: 450px;
+
+.Box2 {
+    flex-basis: 100%;
+    height: 400px;
+    background-color: #434343;
+    background-size: cover;
+    background-position: center;
 }
 
