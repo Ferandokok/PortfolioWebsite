@@ -35,6 +35,7 @@ body {
     color: rgb(157, 157, 157);
     font-size: 16px;
     margin-right: 20px;
+    margin-top: 20px;
     cursor: pointer;
     font-weight: bold;
     width: 65px;
@@ -65,12 +66,15 @@ body {
     flex-wrap: wrap;
 } */
 .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    position: relative;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    max-width: 1150px;
+    margin: auto;
 }
 .TitleBox {
-    text-align: center;
+    text-align: left;
     color: white;
     max-width: 800px;
     padding: 0 20px;
@@ -99,7 +103,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #0E8388;
+    background-color: #323232;
     padding: 50px;
 }
 
