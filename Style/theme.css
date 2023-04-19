@@ -58,6 +58,8 @@ body {
     background-position: top;
     flex-direction: column;
     flex-wrap: nowrap;
+    border-color: black 4px 4px;
+    
 }
 /* .first {
     display: flex;
@@ -110,7 +112,7 @@ body {
 .Box {
     flex-basis: 300px;
     margin: 20px;
-    background-color: white;
+    background-color: rgb(101, 99, 99);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
