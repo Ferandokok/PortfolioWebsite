@@ -58,7 +58,7 @@ body {
     background-position: top;
     flex-direction: column;
     flex-wrap: nowrap;
-    border-color: black 4px 4px;
+    border-bottom: 4px solid #000000;
     
 }
 /* .first {
@@ -70,8 +70,8 @@ body {
 .title{
     display: block;
     position: relative;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
     max-width: 1150px;
     margin: auto;
 }
@@ -136,7 +136,9 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
+.BoxButton:hover{
 
+}
 /* Third section */
 .third {
     display: flex;
