@@ -100,7 +100,7 @@ h2{
     font-size: 22px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-bottom: 20px;
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 /* Second section */
 .second{
@@ -109,12 +109,12 @@ h2{
     grid-template-areas:
     "about" "skills";
     background: linear-gradient(to bottom, #434343, #000000);
-    height: calc(125vh - 60px);
+    height: 750px;
     border-bottom: 4px solid rgb(58, 58, 58);
 }
 .aboutbox{
     grid-area: about;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(99, 99, 99);
     width: auto;
     height: auto;
     padding: 3rem;
@@ -124,7 +124,7 @@ h2{
 }
 .skillsbox{
     grid-area: skills;
-    background-color: blue;
+    background-color: rgb(99, 99, 99);
     width: auto;
     height: auto;
     padding: 3rem;
