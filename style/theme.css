@@ -176,10 +176,25 @@ h2{
 }
 .projects{
     display: grid;
-    
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "imageProjects titleProjects"
+    "imageProjects textProjects";
     background-color: gray;
     width: auto;
     height: auto;
     padding: 3rem;
     margin: 4rem;
+}
+#imageProjects{
+    grid-area: imageProjects;;
+}
+#textProjects{
+    grid-area: textProjects;
+    padding: 10px;
+}
+#titleProjects{
+    grid-area: titleProjects;
+    padding: 10px;
 }
