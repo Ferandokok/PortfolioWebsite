@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+  
+  /* Header Styles */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+  
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+  
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+  
+header nav ul {
+    list-style: none;
+}
+  
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+  
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+  
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+  
+  /* Section Styles */
+section {
+    padding: 60px 0;
+}
+  
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    position: relative;
+}
+  
+h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #4CAF50;
+    display: block;
+    margin: 10px auto 0;
+}
+  
+  /* About Section */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+  
+.profile-pic {
+    flex: 1 1 200px;
+    max-width: 250px;
+    border-radius: 10px;
+}
+  
+.about-text {
+    flex: 2 1 500px;
+}
+  
+  /* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.skill-item {
+    background: #fff;
+    padding: 20px;
+    flex: 1 1 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+  
+.skill-item h3 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+  
+.skill-item p {
+    color: #555;
+}
+  
+  /* Games Section */
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+  
+.game-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+  
+  .game-img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+  
+.game-info {
+    flex: 2 1 500px;
+}
+  
+.game-info h3 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+  
+.game-info p {
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+.game-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 15px;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+  
+.game-links a:hover {
+    background: #4CAF50;
+}
+  
+  /* Contact Section */
+  #contact form {
+    max-width: 600px;
+    margin: auto;
+}
+  
+#contact input, 
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+  
+  #contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+  
+#contact button {
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+  
+  #contact button:hover {
+    background: #45a049;
+}
+  
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.social-links a {
+    margin: 0 10px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+  
+.social-links a:hover {
+    color: #4CAF50;
+}
+  
+  /* Footer Styles */
+footer {
+    background: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+  
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+.game-item {
+    flex-direction: column;
+    align-items: center;
+}
+  
+.game-img, .profile-pic {
+  max-width: 100%;
+    }
+}

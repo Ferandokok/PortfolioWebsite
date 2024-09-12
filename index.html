@@ -1,73 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/theme.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Game Dev Portfolio</title>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <section class="NavButtons">
-        <!-- <a class="Logo">Fernando kok</a>-->
-        <button class="NavButton" style="vertical-align:middle"><span>About Me </span></button>
-        <button class="NavButton" style="vertical-align:middle"><span>Projects</span></button>
-        <button class="NavButton" style="vertical-align:middle"><span>Contact</span></button>
-    </section>
-    <section class="first">
-        <div class="title">
-            <img class="titleIMG" src="./images/me.jpg">
-            <div class="TitleBox">
-                <h3 class="title1">Hey, I'm Fernando Kok</h3>
-                <h1 class="title2">Welcome to my Portfolio!</h1>
-                <h2 class="title3">I'm Based in the Netherlands</h2>
-            </div>
-        </div>
-    </section>
-    <section class="second">
-        <div class="about">
-            <div class="aboutBox">
-                <h2><b>A little about me</b></h2>
-                <br>
-                <h3>Im a 18 year old student currently in my second year of studying software development at Sintlucas.</h3>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="skillsBox">
-                <h2><b>My skills?</b></h2>
-                <br>
-                <h4>Altought I made this website myself, Web-Development isn't my forte. My main focus lies on making game in unity using C#. </h4>
-            </div>
-        </div>
-    </section>
-    <section class="third">
-        <div class="projectTitle">
-            <a><b>Projects</b></a>
-        </div>
-        <div class="projects">
-            <div id="imageProjects">
-              <!--  <img>-->
-            </div>
-            <div id="titleProjects">
-                <h1><b>Adventure Land</b></h1>
-            </div>
-            <div id="textProjects">
-                <h2>This is one of my first 2d shooter games that i have made in unity.</h2>
-            </div>
-        </div>
-    </section>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Your Name</h1>
+      <p>Game Developer | Programmer | Designer</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="footer">
-        <div>
-            
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="images/profile.jpg" alt="Your Photo" class="profile-pic">
+        <div class="about-text">
+          <p>Hi! I'm Fernando Kok, a passionate game developer with expertise in creating engaging and immersive games. I specialize in game design, programming, and using engines like Unity and Unreal Engine.</p>
+          <p>I love bringing ideas to life and continuously learning new technologies to enhance my game development skills.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills & Tools</h2>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h3>Programming Languages</h3>
+          <p>C#, C++, JavaScript, Python</p>
+        </div>
+        <div class="skill-item">
+          <h3>Game Engines</h3>
+          <p>Unity, Unreal Engine, Godot</p>
+        </div>
+        <div class="skill-item">
+          <h3>Tools & Software</h3>
+          <p>Blender, Photoshop, Git, Jira</p>
+        </div>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Games Section -->
+  <section id="games">
+    <div class="container">
+      <h2>My Games</h2>
+      <div class="games-list">
+        <div class="game-item">
+          <img src="images/game1.jpg" alt="Game 1 Screenshot" class="game-img">
+          <div class="game-info">
+            <h3>Game Title 1</h3>
+            <p>A brief description of Game 1. Highlight the main features, genre, and technologies used.</p>
+            <div class="game-links">
+              <a href="#" target="_blank">Play Now</a>
+              <a href="#" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Trailer</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-item">
+          <img src="images/game2.jpg" alt="Game 2 Screenshot" class="game-img">
+          <div class="game-info">
+            <h3>Game Title 2</h3>
+            <p>A brief description of Game 2. Highlight the main features, genre, and technologies used.</p>
+            <div class="game-links">
+              <a href="#" target="_blank">Play Now</a>
+              <a href="#" target="_blank">GitHub</a>
+              <a href="#" target="_blank">Trailer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact-->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="https://github.com/Ferandokok" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/fernando-kok-2bb957251/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>hi</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
